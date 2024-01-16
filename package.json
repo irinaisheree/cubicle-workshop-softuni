@@ -1,0 +1,27 @@
+{
+  "name": "cubicle-workshop-softuni",
+  "version": "1.0.0",
+  "description": "BE 2024",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irinaisheree/cubicle-workshop-softuni.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irinaisheree/cubicle-workshop-softuni/issues"
+  },
+  "homepage": "https://github.com/irinaisheree/cubicle-workshop-softuni#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
