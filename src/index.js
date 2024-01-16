@@ -1,27 +1,17 @@
 const express = require('express')
-const handlebars = require('express-handlebars')
 const app = express()
-const path = require('path')
+
 const expressConfig = require('./config/expressCongfig')
+const handlebarsConfig = require('./config/handlebarsConfig')
+const homeController = require('./controllers/homeController')
 
 const PORT = 5000
 
 expressConfig(app)
+handlebarsConfig(app)
 
-//Handlebars config
-
-app.engine('hbs', handlebars.engine({
-    extname: "hbs"
-}))
-
-app.set('view engine', 'hbs')
-app.set('views', "src/views")
+app.use(homeController)
 
 
-//Routes
-
-app.get('/', (req,res) =>{
-    res.render('index')
-})
 
 app.listen(PORT, ()=> {console.log(`Server is running on port ${PORT}...`)})
