@@ -23,7 +23,6 @@ exports.getAll = async(search, from, to) => {
 }
 
 exports.getOne = (cubeId) => Cube.findById(cubeId)
-
 exports.create = async (cubeData) => {
 
     const cube = new Cube(cubeData)
