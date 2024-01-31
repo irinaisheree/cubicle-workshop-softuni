@@ -8,4 +8,4 @@ const accessorySchema = new mongoose.Schema({
 
 const Accessory = mongoose.model('Accessory', accessorySchema)
 
-mosule.exports = Accessory
+module.exports = Accessory
