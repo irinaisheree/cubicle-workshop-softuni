@@ -13,6 +13,7 @@ const userSchema = new mongoose.Schema({
         // }
     },
 })
+//TODO validate if user exists
 
 userSchema.pre('save', async function() {
     const hash = await bcrypt.hash(this.password, 10)
